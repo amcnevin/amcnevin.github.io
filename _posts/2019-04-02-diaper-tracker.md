@@ -8,7 +8,7 @@ categories:
 - parenting
 feature_image: "https://picsum.photos/2560/600?image=691"
 feature_text: |
-  Shitty data set approaching..
+  Crappy data set approaching..
 ---
 
 Since becoming a father, the desire to involve the little guy in some of my hobbies and interests has been at an all time high.

@@ -5,7 +5,7 @@ title: Things About Me
 
 + Software engineer and architect with a passion for solving problems<br/>
 + Graduate of <span style="color:#D35400">Virginia Tech</span> and proud Hokie<br/>
-+ Homebrewing hobbyest with an interest in trying new styles<br/>
++ Homebrewing hobbyist with an interest in trying new styles<br/>
 + Walker and owner of 2 quirky portuguese water dogs<br/>
 + Recently promoted to new role of Dad<br/>
 
