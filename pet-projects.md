@@ -28,7 +28,7 @@ feature_image: https://picsum.photos/id/102/4320/3240?gravity=south
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>

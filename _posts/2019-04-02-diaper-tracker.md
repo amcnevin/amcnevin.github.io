@@ -1,12 +1,7 @@
 ---
 layout: post
 title: Diaper Tracker Part 1
-categories:
-- python
-- RPi
-- GPIO
-- parenting
-feature_image: "https://picsum.photos/2560/600?image=691"
+feature_image: "https://picsum.photos/id/691/2560/600"
 feature_text: |
   Crappy data set approaching..
 ---
