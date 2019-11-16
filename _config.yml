@@ -45,7 +45,9 @@ navigation_header:
 social_links:
   LinkedIn: https://www.linkedin.com/in/tony-mcnevin-8aa4155/
   Github: https://github.com/amcnevin
-  Link: https://www.hackerrank.com/amcnevin
+  hack: https://www.hackerrank.com/amcnevin
+  books: https://www.goodreads.com/user/show/104114653-anthony-mcnevin
+
 
 # Collections
 collections:
