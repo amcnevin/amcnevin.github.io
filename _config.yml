@@ -2,7 +2,7 @@
 markdown: kramdown
 
 # URL of the Site
-url: 'localhost:4000'
+url: 'https://amcnevin.github.io'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl:
 
