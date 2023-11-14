@@ -1,0 +1,8 @@
+- name: Diaper Tracker
+  image: ../assets/images/coffee.jpg
+  link: https://github.com/amcnevin/diaper-tracker
+  description: "As a Dad, so that I can track my sons diaper changes without sleepily forgetting, I need a means of logging and notifying myself"
+- name: Beacon
+  image: ../assets/images/lightbulb.jpg
+  link: https://github.com/amcnevin/beacon
+  description: "How do I signal my internet is out?"
