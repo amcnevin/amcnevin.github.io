@@ -1,72 +1,85 @@
-# Outputting
-permalink: /:categories/:year/:month/:day/:title.html
+# WhatATheme
+markdown: kramdown
 
-# Conversion
-markdown:         kramdown
-highlighter:      rouge
-excerpt_separator: <!--more-->
+# URL of the Site
+url: 'localhost:4000'
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl:
 
-# Config for your profile.
-title:            amcnevin.github.io           # Site title
-name:             Tony McNevin            # Your name
-avatar:           /theme/img/pups.jpg   # Path to an avatar image
+# Title of the Site
+title: Tony McNevin
+# Description of the Site
+description: Eventual Documentation
+# URL of Image of the Site
+site-image:
+# Keywords of the Site
+site-keywords:
 
-# The theme uses the baseurl throughout, which is useful for running the entire
-# site under a subdir, like for this GitHub Pages deployment as a project site.
-# Use "" when runnign the site out of the root of a domain.
-baseurl: ""
+heroimage: https://media.timeout.com/images/102690880/image.jpg
 
-# Add a directory to hold misc pages, just to keep the root directory clean.
-include: ["_pages", "_portfolio"]
 
-# Wire in the SASS files in the theme directory.
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: amcnevin@gmail.com
+linkedin_username: tony-m-8aa4155
+github_username:  amcnevin
+
+# Google Analytics
+google-analytics: /
+
+
+# Name of the Author
+author-name: Tony McNevin
+# URL for the Image of the Author
+author-image: assets/images/me.jpg
+# 60 Words About the Author
+author-about: Tinkerer, Dad-joke enjoyer, Software Engineer
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://amcnevin.github.io
+
+# SASS
 sass:
-  sass_dir: theme/_sass
+  sass_dir: _sass
   style: compressed
 
-# Turn the projects into a collection.
-collections:
-  projects:
-    output: true
-    title: Projects
-    permalink: /:collection/:name.html
-  portfolio:
-    output: true
-    title: portfolio
-    permalink: /:collection/:name.html
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
 
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
 defaults:
-# Turn the profile sidebar on for all pages by default, except for the
-# collections, where it is off and replaced by useful things on the sidebar.
-# To override this one a page, use
-#    show_profile: false
-# to hide the profile.
   -
     scope:
-      path: ""
+      type: 'posts'
     values:
-      show_profile: true
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
   -
     scope:
-      path: "_posts"
+      type: 'pages'
     values:
-      show_profile: false
-      layout: defaults/post
-  -
-    scope:
-      path: "_portfolio"
-    values:
-      show_profile: false
-      layout: defaults/portfolio
-  -
-    scope:
-      path: "_projects"
-    values:
-      show_profile: false
-      layout: defaults/project
-  -
-    scope:
-      path: "list"
-    values:
-      show_profile: false
-      layout: defaults/list
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
