@@ -4,19 +4,23 @@
 // Setting root sizes and base styles.
 html {
   @include rootsize;
-
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  & {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
 }
 
 // Site-wide base styles.
 body {
   @include fontsize(zeta, all);
 
-  font-family: unquote(map-get($bodytype, font-family));
-  font-style: normal;
-  font-weight: map-get($bodytype, regular);
-  line-height: 2rem;
+  & {
+    font-family: unquote(map-get($bodytype, font-family));
+    font-style: normal;
+    font-weight: map-get($bodytype, regular);
+    line-height: 2rem;
+  }
+
 }
 
 // Links.
@@ -54,7 +58,9 @@ a {
   p {
     @include baseline($fontsize: zeta, $font: $bodytype, $lineheight: 2, $below: 2, $breakpoint: all);
 
-    font-feature-settings: 'kern', 'onum', 'liga';
+    & {
+      font-feature-settings: 'kern', 'onum', 'liga';
+    }
   }
 
   // Headings. OpenType ligatures, discretionary ligatures and lining figures enabled if available.
@@ -213,17 +219,23 @@ a {
   table {
     @include sassline(eta, $headingtype, 2, 0, all);
 
-    font-family: unquote(map-get($headingtype, font-family));
-    font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
-    font-style: normal;
-    font-weight: map-get($headingtype, regular);
-    width: 100%;
+    & {
+      font-family: unquote(map-get($headingtype, font-family));
+      font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
+      font-style: normal;
+      font-weight: map-get($headingtype, regular);
+      width: 100%;
+    }
+
 
     thead {
 
       th {
         @include sassline(zeta, $headingtype, 2, 0, all);
-        padding-bottom: 1px;
+
+        & {
+          padding-bottom: 1px;
+        }
       }
     }
   }
@@ -242,9 +254,11 @@ a {
   small, .caption {
     @include fontsize(theta, all);
 
-    font-family: unquote(map-get($headingtype, font-family));
-    font-style: normal;
-    font-weight: map-get($headingtype, regular);
+    & {
+      font-family: unquote(map-get($headingtype, font-family));
+      font-style: normal;
+      font-weight: map-get($headingtype, regular);
+    }
   }
 
   small {
@@ -254,7 +268,9 @@ a {
   .caption {
     @include baseline(theta, $headingtype, 2, 2, all);
 
-    color: $captionColour;
+    & {
+      color: $captionColour;
+    }
   }
 
   // Nice spacing for captions.
@@ -317,8 +333,10 @@ a {
 
   // Code block.
   code, pre {
-    background-color: $codeBackgroundColour;
-    font-family: unquote(map-get($monospacetype, font-family));
+    & {
+      background-color: $codeBackgroundColour;
+      font-family: unquote(map-get($monospacetype, font-family));
+    }
   }
 
   pre {
@@ -334,7 +352,9 @@ a {
   code {
     @include fontsize(theta, all);
 
-    line-height: 1rem;
+    & {
+      line-height: 1rem;
+    }
   }
 
   // Letter space those capitals people, Jan Tschichold would be proud.
