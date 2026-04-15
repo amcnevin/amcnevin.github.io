@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "minimal-mistakes-jekyll"
+gem "jekyll-remote-theme"
+
 
 group :jekyll_plugins do
+  gem "github-pages"
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
